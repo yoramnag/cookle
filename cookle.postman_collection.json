@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "6f490e49-22da-435b-8f43-4caa447c8cda",
+		"name": "cookle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3913811"
+	},
+	"item": [
+		{
+			"name": "get All Recipes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/recipe/getAllRecipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipe",
+						"getAllRecipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search Recipe",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/recipe/searchRecipe?keyword=cho",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipe",
+						"searchRecipe"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "cho"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validate search Recipe",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/recipe/searchRecipe?keyword=to",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipe",
+						"searchRecipe"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "to"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
