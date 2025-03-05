@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(path = "/api" , produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(path = "/api/recipe" , produces = MediaType.APPLICATION_JSON_VALUE)
 @AllArgsConstructor
 public class RecipesRestController {
 
