@@ -1,10 +1,10 @@
 package com.example.cookle;
 
 import com.example.cookle.entity.Ingredients;
-import com.example.cookle.entity.Instructions;
 import com.example.cookle.entity.Recipes;
+import com.example.cookle.entity.RecipesInstructions;
 import com.example.cookle.repository.IngredientsRepository;
-import com.example.cookle.repository.InstructionsRepository;
+import com.example.cookle.repository.RecipesInstructionsRepository;
 import com.example.cookle.repository.RecipesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
-public class CookleApplication{
+public class CookleApplication {
 
 //	@Autowired
 //	private RecipesRepository recipesRepository;
@@ -24,7 +24,7 @@ public class CookleApplication{
 //	private IngredientsRepository ingredientsRepository;
 //
 //	@Autowired
-//	private InstructionsRepository instructionsRepository;
+//	private RecipesInstructionsRepository recipesInstructionsRepository;
 
 
 	public static void main(String[] args)  {
@@ -36,7 +36,7 @@ public class CookleApplication{
 //
 //		recipesRepository.deleteAllInBatch();
 //		ingredientsRepository.deleteAllInBatch();
-//		instructionsRepository.deleteAllInBatch();
+//		recipesInstructionsRepository.deleteAllInBatch();
 //
 //		Recipes pasta = new Recipes();
 //
@@ -53,11 +53,11 @@ public class CookleApplication{
 //		ingredientsList.add(ingredient2);
 //		pasta.setIngredientsList(ingredientsList);
 //		recipesRepository.save(pasta);
-//		List<Instructions> instructionsList = new ArrayList<>();
-//		Instructions instruction1 = new Instructions();
+//		List<RecipesInstructions> recipesInstructionsList = new ArrayList<>();
+//		RecipesInstructions instruction1 = new RecipesInstructions();
 //		instruction1.setDescription("The first step is to make sure you have plenty of water in your pan. Use a large, high sided saucepan and add at least 500ml, or up to 1 litre of water per 100g dried pasta (depending on the capacity of your pan). Make sure there’s still enough room at the top because you don’t want the water to bubble up and overflow.");
-//		instructionsList.add(instruction1);
-//		pasta.setInstructionsList(instructionsList);
+//		recipesInstructionsList.add(instruction1);
+//		pasta.setRecipesInstructionsList(recipesInstructionsList);
 //		recipesRepository.save(pasta);
 //	}
 

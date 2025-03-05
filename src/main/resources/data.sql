@@ -18,8 +18,8 @@ INSERT INTO recipes_ingredient (recipe_id, ingredient_id) VALUES (2, 4); -- Past
 INSERT INTO recipes_ingredient (recipe_id, ingredient_id) VALUES (3, 5); -- Grilled Chicken - Chicken Breast
 
 -- Insert sample instructions (One-to-Many Relationship)
-INSERT INTO instructions (id, description, recipe_id) VALUES (1, 'Preheat oven to 180°C.', 1);
-INSERT INTO instructions (id, description, recipe_id) VALUES (2, 'Mix flour, sugar, and eggs.', 1);
-INSERT INTO instructions (id, description, recipe_id) VALUES (3, 'Bake for 30 minutes.', 1);
-INSERT INTO instructions (id, description, recipe_id) VALUES (4, 'Boil pasta and add milk.', 2);
-INSERT INTO instructions (id, description, recipe_id) VALUES (5, 'Grill chicken for 15 minutes.', 3);
+INSERT INTO RECIPES_INSTRUCTIONS  (id, description, recipe_id) VALUES (1, 'Preheat oven to 180°C.', 1);
+INSERT INTO RECIPES_INSTRUCTIONS  (id, description, recipe_id) VALUES (2, 'Mix flour, sugar, and eggs.', 1);
+INSERT INTO RECIPES_INSTRUCTIONS  (id, description, recipe_id) VALUES (3, 'Bake for 30 minutes.', 1);
+INSERT INTO RECIPES_INSTRUCTIONS  (id, description, recipe_id) VALUES (4, 'Boil pasta and add milk.', 2);
+INSERT INTO RECIPES_INSTRUCTIONS  (id, description, recipe_id) VALUES (5, 'Grill chicken for 15 minutes.', 3);

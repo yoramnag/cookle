@@ -34,7 +34,7 @@ public class Recipes {
 
     @OneToMany(mappedBy = "recipe")
     @JsonManagedReference
-    private List<Instructions> instructionsList;
+    private List<RecipesInstructions> recipesInstructionsList;
 
 
 }
